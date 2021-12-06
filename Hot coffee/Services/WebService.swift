@@ -57,7 +57,7 @@ class WebService{
     }
     
     
-    func writeData(for fileName: String, orderDetails: [AddOrderViewModel]){
+    func writeData(for fileName: String, orderDetails: [Order]){
         
         guard let documentDirectoryUrl = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else { return }
         let jsonFilePath = documentDirectoryUrl.appendingPathComponent("ordersList.json")

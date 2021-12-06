@@ -16,12 +16,13 @@ class AddOrderViewController: UIViewController {
     
     
     
-    var arr: [AddOrderViewModel]?
+    var arr: [Order]?
     override func viewDidLoad() {
         super.viewDidLoad()
         WebService().load(fileName: "ordersList") { (orders) in
             if let orders = orders{
-                self.arr = orders as! [AddOrderViewModel]
+                self.arr = orders
+                
             }
         }
         
@@ -33,7 +34,7 @@ class AddOrderViewController: UIViewController {
     @IBAction func saveOrder(_ sender: UIBarButtonItem) {
         
         //// Write that JSON to the file created earlier
-        let a = AddOrderViewModel(name: "rahul", coffeeName: coffeeType.Espresso.rawValue, total: 1.0, size: coffeeSize.Large.rawValue)
+        let a = Order(name: "rahul", coffeeName: coffeeType.Americano, total: 1.0, size: coffeeSize.Large)
         
         arr?.insert(a, at: 0)
         if let addOrder = arr{
