@@ -1,0 +1,14 @@
+[
+    {
+        "name": "John Doe",
+        "coffeeName": "Latte",
+        "total": 4.5,
+        "size": "Medium"
+    },
+    {
+        "name": "Nayan",
+        "coffeeName": "Latte",
+        "total": 4.5,
+        "size": "Large"
+    }
+]
