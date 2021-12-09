@@ -8,14 +8,14 @@
 
 import Foundation
 
-enum coffeeType: String, Codable {
+enum CoffeeType: String, Codable, CaseIterable {
     case Latte
     case Cappuccino
     case Americano
     case Espresso
     case Doppio
 }
-enum coffeeSize: String, Codable {
+enum CoffeeSize: String, Codable, CaseIterable {
     case Small
     case Medium
     case Large
@@ -24,13 +24,24 @@ enum coffeeSize: String, Codable {
 // order model
 struct Order: Codable {
     let name: String
-    let coffeeName: coffeeType
+    let coffeeName: CoffeeType
     let total: Double
-    let size: coffeeSize
+    let size: CoffeeSize
 }
 
-//"name": "John Doe",
-//"coffeeName": "Hot Coffee",
-//"total": 4.5,
-//"size": "Medium"
-
+// optional initializer
+extension Order{
+    init?(_ addVM: AddOrderViewModel) {
+        guard let name = addVM.name,
+        let qty = addVM.qty,
+            let selectedType = CoffeeType(rawValue: (addVM.selectedType)!),
+            let selectedSize = CoffeeSize(rawValue: (addVM.selectedSize)!) else{
+                return nil
+        }
+        self.name = name
+        self.total = qty
+        self.coffeeName = selectedType
+        self.size = selectedSize
+    }
+    
+}

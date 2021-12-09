@@ -19,6 +19,7 @@
 		10D03C99275DDD7B00AEF6FC /* OrdersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D03C98275DDD7B00AEF6FC /* OrdersTableViewCell.swift */; };
 		10D03C9B275DEF9F00AEF6FC /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D03C9A275DEF9F00AEF6FC /* Constant.swift */; };
 		10D03C9D275DF67100AEF6FC /* ordersList.json in Resources */ = {isa = PBXBuildFile; fileRef = 10D03C9C275DF67100AEF6FC /* ordersList.json */; };
+		10D03CA1275E37A800AEF6FC /* AddOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D03CA0275E37A800AEF6FC /* AddOrderViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		10D03C98275DDD7B00AEF6FC /* OrdersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersTableViewCell.swift; sourceTree = "<group>"; };
 		10D03C9A275DEF9F00AEF6FC /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		10D03C9C275DF67100AEF6FC /* ordersList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ordersList.json; sourceTree = "<group>"; };
+		10D03CA0275E37A800AEF6FC /* AddOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				10D03C95275DD5A000AEF6FC /* OrderViewModel.swift */,
+				10D03CA0275E37A800AEF6FC /* AddOrderViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				106F2ED8275A35A600721B2A /* OrdersTableViewController.swift in Sources */,
 				106F2EC3275A2D6300721B2A /* AppDelegate.swift in Sources */,
 				10D03C99275DDD7B00AEF6FC /* OrdersTableViewCell.swift in Sources */,
+				10D03CA1275E37A800AEF6FC /* AddOrderViewModel.swift in Sources */,
 				10D03C9B275DEF9F00AEF6FC /* Constant.swift in Sources */,
 				106F2EDF275A49D500721B2A /* Order.swift in Sources */,
 				10D03C96275DD5A000AEF6FC /* OrderViewModel.swift in Sources */,
